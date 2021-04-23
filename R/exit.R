@@ -7,5 +7,5 @@
 #' \donttest{exit("no", 0)}
  
 exit <- function(...){
-	quit(...)
+    quit(...)
 }
