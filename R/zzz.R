@@ -9,8 +9,9 @@
 .onLoad <- function(libname, pkgname){
   options(exit_promise  = !exists("exit", .GlobalEnv))
   if(getOption("exit_promise")){
-    print("ehh")
-    delayedAssign("exit", quit(), .GlobalEnv, .GlobalEnv)
+    exit_ns = asNamespace(pkgname)
+    delayedAssign("exit", quit(), exit_ns, exit_ns)
+    namespaceExport(exit_ns, "exit")
   }
 }
 
