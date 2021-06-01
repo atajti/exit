@@ -2,16 +2,10 @@
 % Please edit documentation in R/exit.R
 \name{exit}
 \alias{exit}
-\title{Exit from R}
-\usage{
-exit(...)
-}
-\arguments{
-\item{...}{Arguments passed to \code{quit()}}
-}
+\title{Exit from R like from bash}
 \description{
-Exit from R by typing \code{exit} or \code{exit()}
+Exit from R like from bash
 }
 \examples{
-\donttest{exit("no", 0)}
+\donttest{exit}
 }
