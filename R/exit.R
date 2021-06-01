@@ -1,11 +1,7 @@
-#' Exit from R
+#' Exit from R like from bash
 #'
-#' Exit from R by typing `exit` or `exit()`
-#' @param ... Arguments passed to `quit()`
-#' @export
+#' @name exit
 #' @examples
-#' \donttest{exit("no", 0)}
- 
-exit <- function(...){
-    quit(...)
-}
+#' \donttest{exit}
+NULL
+#> NULL
